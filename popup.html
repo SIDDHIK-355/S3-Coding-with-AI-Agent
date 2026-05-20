@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Property Price Agent</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="title">🏠 Property Price Agent</div>
+    <label class="toggle">
+      <input type="checkbox" id="showReasoning" checked>
+      <span>Show Reasoning</span>
+    </label>
+  </div>
+
+  <div class="main">
+
+    <!-- LEFT: Chat Panel -->
+    <div class="chat-panel">
+      <div class="messages" id="messages">
+        <div class="welcome">
+          Ask me about rental prices for <b>PGs, flats, or rooms</b> anywhere in India!
+          <div class="examples">
+            <div class="example-chip" onclick="fillInput('PG prices in Koramangala Bangalore')">PG in Koramangala</div>
+            <div class="example-chip" onclick="fillInput('1BHK flat in Bandra Mumbai')">1BHK in Bandra Mumbai</div>
+            <div class="example-chip" onclick="fillInput('Cheapest room in Hitech City Hyderabad')">Rooms in Hitech City</div>
+            <div class="example-chip" onclick="fillInput('2BHK flat in Hinjewadi Pune')">2BHK in Pune</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <input type="password" id="apiKey" placeholder="🔑 Paste your Gemini API Key here" class="api-key-input">
+        <div class="input-row">
+          <input type="text" id="userInput" placeholder="Ask about PG / flat / room prices..." autocomplete="off"
+            onkeydown="if(event.key==='Enter') sendMessage()">
+          <button id="sendBtn" onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Reasoning Panel -->
+    <div class="reasoning-panel" id="reasoningPanel">
+      <div class="reasoning-header">
+        <span>REASONING CHAIN</span>
+        <button class="clear-btn" onclick="clearReasoning()">clear</button>
+      </div>
+      <div class="reasoning-content" id="reasoningContent">
+        <div class="reasoning-empty">Agent reasoning steps will appear here...</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
