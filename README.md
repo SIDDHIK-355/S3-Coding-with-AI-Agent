@@ -1,6 +1,6 @@
 # 🧠 Coding AI Mentor — Chrome Extension
 
-An agentic AI-powered Chrome sidebar that helps you **think through** LeetCode problems step by step — instead of just handing you the answer.
+An agentic AI-powered Chrome sidebar that helps you **think through** Coding problems step by step — instead of just handing you the answer.
 
 Built as **Assignment 3: Agentic AI Chrome Plugin** using the Groq API (LLaMA 3.3 70B) with a full multi-step reasoning chain.
 
