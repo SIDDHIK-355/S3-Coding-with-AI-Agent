@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LeetCode AI Mentor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Main View ── -->
+  <div id="mainView">
+
+    <div class="header">
+      <span class="title">🧠 LeetCode AI Mentor</span>
+      <span class="subtitle">Think, don't just copy</span>
+    </div>
+
+    <div class="controls">
+      <div class="key-row">
+        <input type="password" id="apiKey" class="api-input" placeholder="🔑 Paste Groq API Key">
+        <button id="saveKeyBtn">Save</button>
+      </div>
+
+      <div class="lang-row">
+        <span class="lang-label">Language</span>
+        <div class="lang-selector">
+          <input type="text" id="langInput" value="Python" autocomplete="off" placeholder="Search language...">
+          <div class="lang-dropdown" id="langDropdown"></div>
+        </div>
+      </div>
+
+      <button id="scanBtn">🔍 Scan &amp; Analyze Problem</button>
+    </div>
+
+    <div id="statusMsg" class="status-msg" style="display:none"></div>
+
+    <div class="response-wrapper">
+      <div id="placeholder" class="placeholder">
+        Open any LeetCode problem, then click<br>
+        <b>Scan &amp; Analyze Problem</b>
+      </div>
+      <div id="responseArea" class="response-area" style="display:none"></div>
+    </div>
+
+    <div class="bottom-btn-row">
+      <button class="bottom-btn" id="toggleBtn">🧠 Reasoning</button>
+      <button class="bottom-btn" id="openChatBtn">💬 Chat</button>
+    </div>
+
+  </div>
+
+  <!-- ── Chat Full View ── -->
+  <div id="chatView" style="display:none">
+    <div class="chat-view-header">
+      <button id="chatBackBtn">← Back</button>
+      <span class="chat-view-title">💬 CHAT</span>
+    </div>
+    <div id="chatViewMessages" class="chat-view-messages">
+      <div class="chat-view-empty">Ask anything about the problem below...</div>
+    </div>
+    <div class="chat-view-input-row">
+      <textarea id="chatViewInput" placeholder="Ask anything... e.g. explain two pointers" rows="1"></textarea>
+      <button id="chatViewBtn">Ask</button>
+    </div>
+  </div>
+
+  <!-- ── Reasoning Full View ── -->
+  <div id="reasoningView" style="display:none">
+    <div class="reasoning-view-header">
+      <button id="backBtn">← Back</button>
+      <span class="reasoning-view-title">REASONING CHAIN</span>
+    </div>
+    <div id="reasoningContent" class="reasoning-content">
+      <div class="reasoning-empty">Tool calls will appear here as the agent runs...</div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
