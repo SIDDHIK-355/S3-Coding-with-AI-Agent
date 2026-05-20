@@ -1,4 +1,4 @@
-# 🧠 Coding AI Mentor — Chrome Extension
+# 🧠 Leetcode AI Mentor — Chrome Extension
 
 An agentic AI-powered Chrome sidebar that helps you **think through** Coding problems step by step — instead of just handing you the answer.
 
