@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode AI Mentor",
+  "version": "1.0",
+  "description": "AI mentor that guides your thinking through LeetCode problems step by step",
+  "permissions": ["sidePanel", "storage", "activeTab", "scripting"],
+  "host_permissions": ["https://leetcode.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open LeetCode AI Mentor"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}
