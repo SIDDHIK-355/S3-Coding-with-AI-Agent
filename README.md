@@ -10,7 +10,7 @@ Built as **Assignment 3: Agentic AI Chrome Plugin** using the Groq API (LLaMA 3.
 
 | Main Panel | Reasoning Chain |
 |---|---|
-| Scan any LeetCode problem and get a guided breakdown | View the full agent reasoning — tool calls, results, and final answer |
+| Scan any coding problem and get a guided breakdown | View the full agent reasoning — tool calls, results, and final answer |
 
 ---
 
@@ -86,17 +86,6 @@ git clone https://github.com/YOUR_USERNAME/coding-ai-mentor.git
 
 ---
 
-## 💡 How to Use
-
-1. Open any problem on [leetcode.com/problems/...](https://leetcode.com)
-2. Select your preferred language from the dropdown
-3. Click **🔍 Scan & Analyze Problem**
-4. Read the first step — **then** unlock the next ones
-5. Use the **chat box** to ask follow-up questions
-6. Click **🧠 View Reasoning Chain** to see how the agent thought through the problem
-
----
-
 ## 📁 Project Structure
 
 ```
@@ -114,7 +103,7 @@ day2/
 ## 🔧 The 3 Custom Tools
 
 ### `scan_problem()`
-Injects a script into the active LeetCode tab and extracts the problem title, description, difficulty, and URL using DOM selectors.
+Injects a script into the active tab and extracts the problem title, description, difficulty, and URL using DOM selectors.
 
 ### `identify_patterns(args)`
 Runs regex pattern matching against the problem text to detect:
