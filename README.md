@@ -76,35 +76,34 @@ Agent generates final structured answer
 
 ## 🚀 Installation
 
-### ![STEP 1 — Clone or download](https://img.shields.io/badge/STEP%201-CLONE%20OR%20DOWNLOAD-2563eb?style=for-the-badge&labelColor=000000)
+> [!NOTE]
+> Setup takes about 3 minutes — all you need is **Google Chrome** and a **free Groq account**.
+
+### 1️⃣ &nbsp;Clone or download
 
 ```bash
 git clone https://github.com/SIDDHIK-355/S3-Coding-with-AI-Agent.git
 ```
 
-### ![STEP 2 — Get a free Groq API key](https://img.shields.io/badge/STEP%202-GET%20A%20FREE%20GROQ%20API%20KEY-f55036?style=for-the-badge&labelColor=000000)
+### 2️⃣ &nbsp;Grab a free Groq API key
 
-1. Go to [console.groq.com](https://console.groq.com)
-2. Sign up → **Create API Key** → copy it
+Head to [console.groq.com](https://console.groq.com) → sign up → **Create API Key** → copy it.
 
-✅ *Check:* your key starts with `gsk_`.
+> [!TIP]
+> A valid key starts with `gsk_` — if yours doesn't, you copied the wrong thing.
 
-### ![STEP 3 — Load the extension in Chrome](https://img.shields.io/badge/STEP%203-LOAD%20THE%20EXTENSION%20IN%20CHROME-4285F4?style=for-the-badge&labelColor=000000)
+### 3️⃣ &nbsp;Load the extension in Chrome
 
-1. Open Chrome → go to `chrome://extensions`
-2. Enable **Developer Mode** (top right toggle)
-3. Click **Load unpacked**
-4. Select this project folder (the one containing `manifest.json`)
+Open <kbd>chrome://extensions</kbd> &nbsp;→&nbsp; toggle <kbd>Developer mode</kbd> on &nbsp;→&nbsp; click <kbd>Load unpacked</kbd> &nbsp;→&nbsp; select this folder (the one containing `manifest.json`).
 
-✅ *Check:* the **🧠 LeetCode AI Mentor** card appears in your extensions list.
+The 🧠 **LeetCode AI Mentor** card should now appear in your extensions list.
 
-### ![STEP 4 — Open the sidebar](https://img.shields.io/badge/STEP%204-OPEN%20THE%20SIDEBAR-16a34a?style=for-the-badge&labelColor=000000)
+### 4️⃣ &nbsp;Open the sidebar & save your key
 
-1. Click the extension icon in the Chrome toolbar
-2. The sidebar opens on the right
-3. Paste your Groq API key → click **Save**
+Click the extension icon in the toolbar — the sidebar opens on the right. Paste your Groq key and hit <kbd>Save</kbd>.
 
-✅ *Check:* open any LeetCode problem and hit **Scan & Analyze** — the reasoning chain starts.
+> [!IMPORTANT]
+> **Test drive:** open any LeetCode problem and hit 🔍 **Scan & Analyze** — the reasoning chain lights up in real time.
 
 ---
 
