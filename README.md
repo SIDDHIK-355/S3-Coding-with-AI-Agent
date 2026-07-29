@@ -43,21 +43,24 @@ A personal project exploring **agentic AI in the browser** — the Groq API (LLa
 
 The agent runs a **multi-step agentic loop** using 3 custom tools:
 
-```
-User clicks "Scan & Analyze Problem"
-        ↓
-Agent calls Tool 1: scan_problem()
-  → Reads the LeetCode page (title, description, difficulty)
-        ↓
-Agent calls Tool 2: identify_patterns()
-  → Detects algorithmic patterns (Sliding Window, DP, BFS, etc.)
-  → Suggests data structures and thinking hints
-        ↓
-Agent calls Tool 3: analyze_complexity()
-  → Returns time complexity, space complexity, and trade-offs
-        ↓
-Agent generates final structured answer
-  → How to Think, Data Structure Choice, Pseudocode, Solution, Comparison Table
+```mermaid
+flowchart TD
+    A["🖱️ User clicks Scan &amp; Analyze Problem"]
+    B["🔍 Tool 1 — scan_problem()<br/>Reads the LeetCode page: title, description, difficulty"]
+    C["🧩 Tool 2 — identify_patterns()<br/>Detects patterns: Sliding Window, DP, BFS…<br/>Suggests data structures &amp; thinking hints"]
+    D["⏱️ Tool 3 — analyze_complexity()<br/>Returns time &amp; space complexity + trade-offs"]
+    E["✨ Final structured answer<br/>How to Think · Data Structure Choice · Pseudocode · Solution · Comparison Table"]
+
+    A --> B --> C --> D --> E
+
+    classDef user fill:#0d1117,stroke:#ea580c,stroke-width:2px,color:#fbbf24
+    classDef tool fill:#ea580c,stroke:#fbbf24,stroke-width:2px,color:#ffffff
+    classDef final fill:#fbbf24,stroke:#ea580c,stroke-width:2px,color:#1f2937
+
+    class A user
+    class B,C,D tool
+    class E final
+    linkStyle default stroke:#ea580c,stroke-width:2px
 ```
 
 ---
