@@ -1,6 +1,6 @@
-<h1 align="center">🧠 LeetCode AI Mentor</h1>
-
-<h3 align="center"><b>Your Agentic AI Coding Coach — Right Inside Chrome</b></h3>
+<p align="center">
+  <img src="assets/title.svg" alt="🧠 LeetCode AI Mentor — Your Agentic AI Coding Coach" width="100%">
+</p>
 
 <p align="center">
   <b>Think through LeetCode problems step by step — instead of just being handed the answer.</b>

@@ -1,0 +1,23 @@
+<svg width="820" height="150" viewBox="0 0 820 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a2472">
+        <animate attributeName="stop-color" values="#0a2472;#2563eb;#0a2472" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#2563eb">
+        <animate attributeName="stop-color" values="#2563eb;#38bdf8;#2563eb" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#38bdf8">
+        <animate attributeName="stop-color" values="#38bdf8;#0a2472;#38bdf8" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <text x="410" y="66" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="800" fill="url(#blueGrad)">LeetCode AI Mentor</text>
+  <text x="410" y="106" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="3" fill="#60a5fa">YOUR AGENTIC AI CODING COACH — INSIDE CHROME</text>
+  <rect x="310" y="126" width="200" height="4" rx="2" fill="url(#barGrad)"/>
+</svg>
