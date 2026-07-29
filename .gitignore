@@ -1,0 +1,4 @@
+.DS_Store
+
+# Class transcript — contains attendee names (PII), keep local only
+transcript_class3.txt

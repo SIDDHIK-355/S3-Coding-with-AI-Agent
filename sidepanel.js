@@ -576,7 +576,16 @@ async function sendChatFromView() {
   const message = input.value.trim();
 
   if (!message) return;
-  if (!apiKey)  { alert('Please enter your Groq API Key first.'); return; }
+  if (!apiKey) {
+    const container = document.getElementById('chatViewMessages');
+    container.querySelector('.chat-view-empty')?.remove();
+    const errBubble = document.createElement('div');
+    errBubble.className = 'chat-bubble ai-bubble error-bubble';
+    errBubble.textContent = '🔑 Please enter your Groq API Key first (on the main panel).';
+    container.appendChild(errBubble);
+    container.scrollTop = container.scrollHeight;
+    return;
+  }
 
   input.value = '';
   input.style.height = 'auto';
@@ -663,7 +672,7 @@ function initLangDropdown() {
 // ─── Main Scan Action ──────────────────────────────────────────────────────────
 async function scan() {
   const apiKey = document.getElementById('apiKey').value.trim();
-  if (!apiKey) { alert('Please enter your Groq API Key first.'); return; }
+  if (!apiKey) { setStatus('🔑 Please enter your Groq API Key first.', 'error'); return; }
 
   const btn = document.getElementById('scanBtn');
   btn.disabled = true;
@@ -684,6 +693,8 @@ async function scan() {
   } catch (err) {
     setStatus('❌ ' + err.message, 'error');
     document.getElementById('placeholder').style.display = 'block';
+    const emptyEl = document.getElementById('reasoningContent').querySelector('.reasoning-empty');
+    if (emptyEl) emptyEl.textContent = 'Tool calls will appear here as the agent runs...';
   }
 
   btn.disabled = false;
@@ -695,8 +706,9 @@ const chatHistory = [];
 // ─── Save Key ─────────────────────────────────────────────────────────────────
 function saveKey() {
   const apiKey = document.getElementById('apiKey').value.trim();
-  if (!apiKey) { alert('Please paste your API key first.'); return; }
+  if (!apiKey) { setStatus('🔑 Please paste your API key first.', 'error'); return; }
   chrome.storage.local.set({ groqKey: apiKey });
+  setStatus('');
   const btn = document.getElementById('saveKeyBtn');
   btn.textContent = 'Saved ✓';
   btn.style.background = '#238636';
