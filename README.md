@@ -1,8 +1,20 @@
-# 🧠 Leetcode AI Mentor — Chrome Extension
+<h1 align="center">🧠 LeetCode AI Mentor</h1>
 
-An agentic AI-powered Chrome sidebar that helps you **think through** Coding problems step by step — instead of just handing you the answer.
+<h3 align="center"><b>Your Agentic AI Coding Coach — Right Inside Chrome</b></h3>
 
-Built as **Assignment 3: Agentic AI Chrome Plugin** using the Groq API (LLaMA 3.3 70B) with a full multi-step reasoning chain.
+<p align="center">
+  <b>Think through LeetCode problems step by step — instead of just being handed the answer.</b>
+</p>
+
+<p align="center">
+  <img alt="Chrome MV3" src="https://img.shields.io/badge/Chrome-Manifest%20V3-4285F4?logo=googlechrome&logoColor=white">
+  <img alt="Groq" src="https://img.shields.io/badge/Groq-LLaMA%203.3%2070B-f55036">
+  <img alt="Agentic" src="https://img.shields.io/badge/Agentic-3%20Custom%20Tools-8A2BE2">
+</p>
+
+---
+
+A personal project exploring **agentic AI in the browser** — the Groq API (LLaMA 3.3 70B) drives a full multi-step reasoning chain with custom tool calling.
 
 ---
 
@@ -66,7 +78,7 @@ Agent generates final structured answer
 
 ### 1. Clone or Download
 ```bash
-git clone https://github.com/YOUR_USERNAME/coding-ai-mentor.git
+git clone https://github.com/SIDDHIK-355/S3-Coding-with-AI-Agent.git
 ```
 
 ### 2. Get a Free Groq API Key
@@ -77,7 +89,7 @@ git clone https://github.com/YOUR_USERNAME/coding-ai-mentor.git
 1. Open Chrome → go to `chrome://extensions`
 2. Enable **Developer Mode** (top right toggle)
 3. Click **Load unpacked**
-4. Select the project folder (`day2/`)
+4. Select this project folder (the one containing `manifest.json`)
 
 ### 4. Open the Sidebar
 1. Click the extension icon in the Chrome toolbar
@@ -89,7 +101,7 @@ git clone https://github.com/YOUR_USERNAME/coding-ai-mentor.git
 ## 📁 Project Structure
 
 ```
-day2/
+Coding-AI-Agent-main/
 ├── manifest.json       # Chrome MV3 config
 ├── background.js       # Opens sidebar on extension click
 ├── sidepanel.html      # Sidebar UI layout
@@ -116,7 +128,7 @@ Looks up the time complexity, space complexity, and trade-off notes for a given 
 
 ---
 
-## 📋 Assignment Requirements Checklist
+## 📋 What's Under the Hood
 
 - [x] Chrome Extension with Side Panel
 - [x] Calls LLM multiple times (agentic loop — up to 10 iterations)
@@ -129,5 +141,5 @@ Looks up the time complexity, space complexity, and trade-off notes for a given 
 
 ## 👨‍💻 Author
 
-Made with ❤️ for Assignment 3 — Agentic AI  
+Made with ❤️ by [Siddhi](https://github.com/SIDDHIK-355)  
 Powered by [Groq](https://groq.com) · LLaMA 3.3 70B

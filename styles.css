@@ -14,16 +14,56 @@ body {
 
 /* ── Header ── */
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 14px;
-  background: #161b22;
-  border-bottom: 1px solid #21262d;
+  padding: 12px 14px;
+  background: linear-gradient(135deg, #161b22 0%, #1a1530 60%, #161b22 100%);
   flex-shrink: 0;
 }
-.title  { font-size: 14px; font-weight: 700; color: #58a6ff; }
-.subtitle { font-size: 10px; color: #484f58; }
+.header::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #58a6ff, #bc8cff, #ff7b72, #58a6ff);
+  background-size: 300% 100%;
+  animation: header-glow 6s linear infinite;
+}
+@keyframes header-glow {
+  to { background-position: 300% 0; }
+}
+.title { display: flex; align-items: center; gap: 7px; }
+.logo {
+  font-size: 18px;
+  filter: drop-shadow(0 0 6px rgba(188, 140, 255, 0.55));
+}
+.title-text {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  background: linear-gradient(90deg, #58a6ff, #bc8cff, #58a6ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: title-shine 5s linear infinite;
+}
+@keyframes title-shine {
+  to { background-position: 200% center; }
+}
+.subtitle {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #8b949e;
+  padding: 3px 9px;
+  border: 1px solid #30363d;
+  border-radius: 999px;
+  background: rgba(88, 166, 255, 0.07);
+  white-space: nowrap;
+}
 
 /* ── Controls ── */
 .controls {
