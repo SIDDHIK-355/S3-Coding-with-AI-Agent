@@ -44,12 +44,13 @@ A personal project exploring **agentic AI in the browser** — the Groq API (LLa
 The agent runs a **multi-step agentic loop** using 3 custom tools:
 
 ```mermaid
+%%{init: {"themeVariables": {"fontSize": "13px"}, "flowchart": {"rankSpacing": 26, "nodeSpacing": 30, "padding": 6}}}%%
 flowchart TD
-    A["🖱️ User clicks Scan &amp; Analyze Problem"]
-    B["🔍 Tool 1 — scan_problem()<br/>Reads the LeetCode page: title, description, difficulty"]
-    C["🧩 Tool 2 — identify_patterns()<br/>Detects patterns: Sliding Window, DP, BFS…<br/>Suggests data structures &amp; thinking hints"]
-    D["⏱️ Tool 3 — analyze_complexity()<br/>Returns time &amp; space complexity + trade-offs"]
-    E["✨ Final structured answer<br/>How to Think · Data Structure Choice · Pseudocode · Solution · Comparison Table"]
+    A["🖱️ User clicks Scan &amp; Analyze"]
+    B["🔍 Tool 1 — scan_problem() · reads title, description, difficulty"]
+    C["🧩 Tool 2 — identify_patterns() · Sliding Window, DP, BFS… + hints"]
+    D["⏱️ Tool 3 — analyze_complexity() · time, space, trade-offs"]
+    E["✨ Final answer · How to Think, Pseudocode, Solution, Comparison"]
 
     A --> B --> C --> D --> E
 
