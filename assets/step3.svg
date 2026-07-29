@@ -1,0 +1,11 @@
+<svg width="560" height="40" viewBox="0 0 560 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="4" width="32" height="32" rx="9" fill="url(#g3)"/>
+  <text x="16" y="27" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" font-weight="800" fill="#ffffff">3</text>
+  <text x="44" y="30" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="25" font-weight="800" fill="url(#g3)">Load the extension in Chrome</text>
+</svg>
