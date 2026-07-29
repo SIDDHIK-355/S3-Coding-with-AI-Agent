@@ -78,26 +78,26 @@ flowchart TD
 > [!NOTE]
 > Setup takes about 3 minutes — all you need is **Google Chrome** and a **free Groq account**.
 
-### <img src="assets/step1.svg?v=2" alt="Step 1 — Clone or download" height="40">
+### <img src="assets/step1-orange.svg" alt="Step 1 — Clone or download" height="40">
 
 ```bash
 git clone https://github.com/SIDDHIK-355/S3-Coding-with-AI-Agent.git
 ```
 
-### <img src="assets/step2.svg?v=2" alt="Step 2 — Grab a free Groq API key" height="40">
+### <img src="assets/step2-orange.svg" alt="Step 2 — Grab a free Groq API key" height="40">
 
 Head to [console.groq.com](https://console.groq.com) → sign up → **Create API Key** → copy it.
 
 > [!TIP]
 > A valid key starts with `gsk_` — if yours doesn't, you copied the wrong thing.
 
-### <img src="assets/step3.svg?v=2" alt="Step 3 — Load the extension in Chrome" height="40">
+### <img src="assets/step3-orange.svg" alt="Step 3 — Load the extension in Chrome" height="40">
 
 Open <kbd>chrome://extensions</kbd> &nbsp;→&nbsp; toggle <kbd>Developer mode</kbd> on &nbsp;→&nbsp; click <kbd>Load unpacked</kbd> &nbsp;→&nbsp; select this folder (the one containing `manifest.json`).
 
 The 🧠 **LeetCode AI Mentor** card should now appear in your extensions list.
 
-### <img src="assets/step4.svg?v=2" alt="Step 4 — Open the sidebar & save your key" height="40">
+### <img src="assets/step4-orange.svg" alt="Step 4 — Open the sidebar & save your key" height="40">
 
 Click the extension icon in the toolbar — the sidebar opens on the right. Paste your Groq key and hit <kbd>Save</kbd>.
 
