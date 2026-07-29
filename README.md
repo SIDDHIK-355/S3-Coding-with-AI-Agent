@@ -76,25 +76,35 @@ Agent generates final structured answer
 
 ## 🚀 Installation
 
-### 1. Clone or Download
+### ![STEP 1 — Clone or download](https://img.shields.io/badge/STEP%201-CLONE%20OR%20DOWNLOAD-2563eb?style=for-the-badge&labelColor=000000)
+
 ```bash
 git clone https://github.com/SIDDHIK-355/S3-Coding-with-AI-Agent.git
 ```
 
-### 2. Get a Free Groq API Key
-1. Go to [console.groq.com](https://console.groq.com)
-2. Sign up → Create API Key → Copy it
+### ![STEP 2 — Get a free Groq API key](https://img.shields.io/badge/STEP%202-GET%20A%20FREE%20GROQ%20API%20KEY-f55036?style=for-the-badge&labelColor=000000)
 
-### 3. Load the Extension in Chrome
+1. Go to [console.groq.com](https://console.groq.com)
+2. Sign up → **Create API Key** → copy it
+
+✅ *Check:* your key starts with `gsk_`.
+
+### ![STEP 3 — Load the extension in Chrome](https://img.shields.io/badge/STEP%203-LOAD%20THE%20EXTENSION%20IN%20CHROME-4285F4?style=for-the-badge&labelColor=000000)
+
 1. Open Chrome → go to `chrome://extensions`
 2. Enable **Developer Mode** (top right toggle)
 3. Click **Load unpacked**
 4. Select this project folder (the one containing `manifest.json`)
 
-### 4. Open the Sidebar
+✅ *Check:* the **🧠 LeetCode AI Mentor** card appears in your extensions list.
+
+### ![STEP 4 — Open the sidebar](https://img.shields.io/badge/STEP%204-OPEN%20THE%20SIDEBAR-16a34a?style=for-the-badge&labelColor=000000)
+
 1. Click the extension icon in the Chrome toolbar
 2. The sidebar opens on the right
 3. Paste your Groq API key → click **Save**
+
+✅ *Check:* open any LeetCode problem and hit **Scan & Analyze** — the reasoning chain starts.
 
 ---
 
