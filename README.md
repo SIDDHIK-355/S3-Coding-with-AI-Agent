@@ -53,13 +53,9 @@ flowchart TD
 
     A --> B --> C --> D --> E
 
-    classDef user fill:#0d1117,stroke:#ea580c,stroke-width:2px,color:#fbbf24
-    classDef tool fill:#ea580c,stroke:#fbbf24,stroke-width:2px,color:#ffffff
-    classDef final fill:#fbbf24,stroke:#ea580c,stroke-width:2px,color:#1f2937
+    classDef step fill:#0d1117,stroke:#ea580c,stroke-width:2px,color:#fbbf24
 
-    class A user
-    class B,C,D tool
-    class E final
+    class A,B,C,D,E step
     linkStyle default stroke:#ea580c,stroke-width:2px
 ```
 
