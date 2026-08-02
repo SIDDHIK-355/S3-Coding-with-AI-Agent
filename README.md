@@ -27,6 +27,12 @@ A personal project exploring **agentic AI in the browser** — the Groq API (LLa
 ---
 <img width="1275" height="788" alt="image" src="https://github.com/user-attachments/assets/132ce21d-d66a-4af8-9b56-958c492c9bc2" />
 
+<img width="563" height="680" alt="image" src="https://github.com/user-attachments/assets/a47f9223-0f95-48f4-81d5-403ab33927fc" />
+
+<img width="583" height="686" alt="image" src="https://github.com/user-attachments/assets/515ec3c7-e6fe-4670-8708-8c501a766060" />
+
+
+
 ## ✨ Features
 
 - **Agentic Loop** — The AI calls 3 custom tools before answering, just like a real agent
