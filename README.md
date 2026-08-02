@@ -25,6 +25,7 @@ A personal project exploring **agentic AI in the browser** — the Groq API (LLa
 | Scan any coding problem and get a guided breakdown | View the full agent reasoning — tool calls, results, and final answer |
 
 ---
+<img width="1275" height="788" alt="image" src="https://github.com/user-attachments/assets/132ce21d-d66a-4af8-9b56-958c492c9bc2" />
 
 ## ✨ Features
 
